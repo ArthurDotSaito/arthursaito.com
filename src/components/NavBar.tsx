@@ -6,7 +6,7 @@ import Link from 'next/link';
 export default function NavBar() {
   const pages = ['home', 'sobre', 'artigos'];
   const router = useRouter();
-  const [hovered, setHovered] = useState('');
+  const [selected, setSelectedTab] = useState('');
 
   return (
     <Header>
@@ -17,8 +17,13 @@ export default function NavBar() {
         <List>
           {pages.map((page) => {
             const path = `/${page.toLowerCase()}`;
-            const isHovered = hovered === page;
-            return <li key={page}>{page}</li>;
+            const isHovered = selected === page;
+            return (
+              <li key={page} onMouseEnter={() => setSelectedTab(page)}>
+                <NavBarPageTitle>{page}</NavBarPageTitle>
+                {page === selected && <NavBarPageTitleSelected></NavBarPageTitleSelected>}
+              </li>
+            );
           })}
         </List>
       </Nav>
@@ -78,4 +83,24 @@ const Nav = styled('nav', {
   flexBasis: '100%',
   '@bp2': { order: 0, flexBasis: 'initial' },
   '@bp3': { overflowX: 'scroll', overflowY: 'hidden' },
+});
+
+const NavBarPageTitle = styled('section', {
+  display: 'inline-block',
+  fontSize: '12px',
+  fontWeight: '500',
+  letterSpacing: '1.2px',
+  padding: '20px',
+  textDecoration: 'none',
+  textTransform: 'uppercase',
+});
+
+const NavBarPageTitleSelected = styled('section', {
+  display: 'inline-block',
+  fontSize: '12px',
+  fontWeight: '500',
+  letterSpacing: '1.2px',
+  padding: '20px',
+  textDecoration: 'none',
+  textTransform: 'uppercase',
 });
