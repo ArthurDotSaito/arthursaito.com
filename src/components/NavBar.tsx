@@ -13,6 +13,15 @@ export default function NavBar() {
       <Link href="/" passHref>
         <ButtonLogo>AS</ButtonLogo>
       </Link>
+      <Nav>
+        <List>
+          {pages.map((page) => {
+            const path = `/${page.toLowerCase()}`;
+            const isHovered = hovered === page;
+            return <li key={page}>{page}</li>;
+          })}
+        </List>
+      </Nav>
     </Header>
   );
 }
@@ -50,4 +59,23 @@ const ButtonLogo = styled(ButtonHeader, {
   textDecoration: 'none',
   marginLeft: '12px',
   fontFamily: '$heading',
+});
+
+const List = styled('ul', {
+  margin: '0',
+  padding: '0',
+  listStyle: 'none',
+  display: 'inline-flex',
+  position: 'relative',
+  top: '5px',
+  '@bp1': { justifyContent: 'space-around' },
+});
+
+const Nav = styled('nav', {
+  textAlign: 'center',
+  flex: 1,
+  order: 2,
+  flexBasis: '100%',
+  '@bp2': { order: 0, flexBasis: 'initial' },
+  '@bp3': { overflowX: 'scroll', overflowY: 'hidden' },
 });
