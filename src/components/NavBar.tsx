@@ -11,7 +11,7 @@ export default function NavBar() {
   return (
     <Header>
       <Link href="/" passHref>
-        <ButtonLogo as="a">AS</ButtonLogo>
+        <ButtonLogo>AS</ButtonLogo>
       </Link>
     </Header>
   );
