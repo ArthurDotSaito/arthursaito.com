@@ -2,7 +2,7 @@ import { useRouter } from 'next/router';
 import { useState } from 'react';
 import { styled } from '../../stitches.config';
 import Link from 'next/link';
-import { motion } from 'framer-motion';
+import { AnimatePresence, motion } from 'framer-motion';
 
 export default function NavBar() {
   const pages = ['home', 'sobre', 'artigos'];
@@ -21,21 +21,23 @@ export default function NavBar() {
             const isHovered = selected === page;
             return (
               <li key={page} onMouseEnter={() => setSelectedTab(page)}>
-                <NavBarPageTitle
-                  className={selected === page ? 'selected' : ''}
-                  layoutId={`title-${page}`}
-                  transition={{ type: 'spring', bounce: 0.25, duration: 0.5 }}
-                >
-                  {isHovered && (
-                    <NavBarPageTitleHovered
-                      layoutId="nav"
-                      initial={{ opacity: 0 }}
-                      animate={{ opacity: 1 }}
-                      exit={{ opacity: 0 }}
-                    />
-                  )}
-                  {page}
-                </NavBarPageTitle>
+                {isHovered ? (
+                  <NavBarPageTitleHovered
+                    layoutId="nav"
+                    initial={{ opacity: 0, scale: 0.95 }}
+                    animate={{ opacity: 1, scale: 1 }}
+                    exit={{ opacity: 0, scale: 0.95 }}
+                  >
+                    {page}
+                  </NavBarPageTitleHovered>
+                ) : (
+                  <NavBarPageTitle
+                    layoutId={`title-${page}`}
+                    transition={{ type: 'spring', bounce: 0.5, duration: 0.5 }}
+                  >
+                    {page}
+                  </NavBarPageTitle>
+                )}
               </li>
             );
           })}
@@ -111,8 +113,15 @@ const NavBarPageTitle = styled(motion.section, {
 });
 
 const NavBarPageTitleHovered = styled(motion.section, {
+  cursor: 'pointer',
+  display: 'inline-block',
+  fontSize: '12px',
+  fontWeight: '700',
+  letterSpacing: '1.2px',
+  padding: '20px',
+  textDecoration: 'none',
+  textTransform: 'uppercase',
   background: '$hover',
-  padding: 20,
   borderRadius: '$borderRadius',
   zIndex: -1,
 });
