@@ -1,6 +1,6 @@
 import { styled } from '../../stitches.config';
 
-export const Wrapper = styled('div', {
+export const BaseWrapper = styled('div', {
   display: 'flex',
   flexDirection: 'column',
   minHeight: '100vh',
