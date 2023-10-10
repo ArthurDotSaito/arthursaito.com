@@ -2,6 +2,7 @@ import { useRouter } from 'next/router';
 import { useState } from 'react';
 import { styled } from '../../stitches.config';
 import Link from 'next/link';
+import { motion } from 'framer-motion';
 
 export default function NavBar() {
   const pages = ['home', 'sobre', 'artigos'];
@@ -20,8 +21,21 @@ export default function NavBar() {
             const isHovered = selected === page;
             return (
               <li key={page} onMouseEnter={() => setSelectedTab(page)}>
-                <NavBarPageTitle>{page}</NavBarPageTitle>
-                {page === selected && <NavBarPageTitleSelected></NavBarPageTitleSelected>}
+                <NavBarPageTitle
+                  className={selected === page ? 'selected' : ''}
+                  layoutId={`title-${page}`}
+                  transition={{ type: 'spring', bounce: 0.25, duration: 0.5 }}
+                >
+                  {isHovered && (
+                    <NavBarPageTitleHovered
+                      layoutId="nav"
+                      initial={{ opacity: 0 }}
+                      animate={{ opacity: 1 }}
+                      exit={{ opacity: 0 }}
+                    />
+                  )}
+                  {page}
+                </NavBarPageTitle>
               </li>
             );
           })}
@@ -85,7 +99,8 @@ const Nav = styled('nav', {
   '@bp3': { overflowX: 'scroll', overflowY: 'hidden' },
 });
 
-const NavBarPageTitle = styled('section', {
+const NavBarPageTitle = styled(motion.section, {
+  cursor: 'pointer',
   display: 'inline-block',
   fontSize: '12px',
   fontWeight: '500',
@@ -95,12 +110,9 @@ const NavBarPageTitle = styled('section', {
   textTransform: 'uppercase',
 });
 
-const NavBarPageTitleSelected = styled('section', {
-  display: 'inline-block',
-  fontSize: '12px',
-  fontWeight: '500',
-  letterSpacing: '1.2px',
-  padding: '20px',
-  textDecoration: 'none',
-  textTransform: 'uppercase',
+const NavBarPageTitleHovered = styled(motion.section, {
+  background: '$hover',
+  padding: 20,
+  borderRadius: '$borderRadius',
+  zIndex: -1,
 });
