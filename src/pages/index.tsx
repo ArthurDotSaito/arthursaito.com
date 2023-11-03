@@ -1,9 +1,9 @@
-import NavBar from '@/components/NavBar';
+import Page from '@/layout/Page';
 
 export default function Index() {
   return (
     <>
-      <NavBar />
+      <Page />
     </>
   );
 }
