@@ -43,6 +43,9 @@ export default function NavBar() {
           })}
         </List>
       </Nav>
+      <Link href="/" passHref>
+        <ButtonLogo>AS</ButtonLogo>
+      </Link>
     </Header>
   );
 }
