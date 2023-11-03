@@ -7,7 +7,7 @@ export default function Page({ children }: any) {
     <BaseWrapper>
       <NavBar />
       <PageContainer>
-        <PageStandardContent>aaaaaaaaaa</PageStandardContent>
+        <PageStandardContent>{children}</PageStandardContent>
       </PageContainer>
     </BaseWrapper>
   );
