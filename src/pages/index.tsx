@@ -1,9 +1,14 @@
+import { AnimationContainer } from '@/components/Animation-Container';
+import ThreeJsScene from '@/components/lib/ThreeScene';
 import { Box } from '@/layout/ChakraUI';
 import TypewriterComponent from 'typewriter-effect';
 
 export default function Index() {
   return (
     <>
+      <AnimationContainer>
+        <ThreeJsScene />
+      </AnimationContainer>
       <Box
         borderRadius="lg"
         mb={6}
