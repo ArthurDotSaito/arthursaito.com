@@ -16,7 +16,7 @@ export default function Index() {
         Hello,
         <TypewriterComponent
           options={{
-            strings: ["I'm Arthur Saito", "I'm a engineer", "I'm developer"],
+            strings: ["I'm Arthur Saito", "I'm a engineer", "I'm a developer"],
             autoStart: true,
             loop: true,
           }}
