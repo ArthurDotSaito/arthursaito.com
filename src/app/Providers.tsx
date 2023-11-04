@@ -8,7 +8,7 @@ interface IProps {
 
 const Providers = ({ children }: IProps) => {
   return (
-    <ChakraProvider>
+    <ChakraProvider resetCSS={false} disableGlobalStyle={true}>
       <PrimeReactProvider value={{ ripple: true }}>{children}</PrimeReactProvider>;
     </ChakraProvider>
   );
