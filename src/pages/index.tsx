@@ -1,4 +1,5 @@
-import { Box, useColorModeValue } from '@/layout/ChakraUI';
+import { Box } from '@/layout/ChakraUI';
+import TypewriterComponent from 'typewriter-effect';
 
 export default function Index() {
   return (
@@ -9,9 +10,17 @@ export default function Index() {
         p={3}
         textAlign="center"
         bg={'whiteAlpha.200'}
+        color={'white'}
         css={{ backdropFilter: 'blur(10px)' }}
       >
-        Hello, I'm Arthur Saito
+        Hello,
+        <TypewriterComponent
+          options={{
+            strings: ["I'm Arthur Saito", "I'm a engineer", "I'm developer"],
+            autoStart: true,
+            loop: true,
+          }}
+        />
       </Box>
     </>
   );
