@@ -2,12 +2,18 @@
 import Page from '@/layout/Page';
 import '../app/layout';
 import { AppProps } from 'next/app';
+import { Providers } from '@/app/Providers';
+import React from 'react';
 
 function App({ Component, pageProps }: AppProps) {
   return (
-    <Page>
-      <Component {...pageProps} />
-    </Page>
+    <React.StrictMode>
+      <Providers>
+        <Page>
+          <Component {...pageProps} />
+        </Page>
+      </Providers>
+    </React.StrictMode>
   );
 }
 
