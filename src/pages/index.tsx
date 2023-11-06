@@ -1,6 +1,6 @@
 import { AnimationContainer } from '@/components/Animation-Container';
 import ThreeJsScene from '@/components/lib/ThreeScene';
-import { Box } from '@/layout/ChakraUI';
+import { Avatar, Box } from '@/layout/ChakraUI';
 import TypewriterComponent from 'typewriter-effect';
 
 export default function Index() {
@@ -26,6 +26,9 @@ export default function Index() {
             loop: true,
           }}
         />
+      </Box>
+      <Box display={{ md: 'flex' }}>
+        <Avatar src="/static/arthur.jpeg"></Avatar>
       </Box>
     </>
   );
