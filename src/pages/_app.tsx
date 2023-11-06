@@ -4,6 +4,7 @@ import '../app/layout';
 import { AppProps } from 'next/app';
 import { Providers } from '@/app/Providers';
 import React from 'react';
+import { styled } from '../../stitches.config';
 
 function App({ Component, pageProps }: AppProps) {
   return (
