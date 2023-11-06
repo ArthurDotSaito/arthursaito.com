@@ -11,7 +11,7 @@ export default function Index() {
         <ThreeJsScene />
       </AnimationContainer>
       <Box
-        height={'6rem'}
+        height={{ base: 'auto', md: '6rem' }}
         display={'flex'}
         justifyContent={'center'}
         alignItems={'center'}
@@ -21,7 +21,7 @@ export default function Index() {
         textAlign="center"
         bg={'whiteAlpha.200'}
         color={'white'}
-        fontSize={'1.7rem'}
+        fontSize={{ base: 'auto', md: '1.7rem' }}
         css={{ backdropFilter: 'blur(10px)' }}
       >
         Hello,
@@ -33,9 +33,14 @@ export default function Index() {
           }}
         />
       </Box>
-      <Box display={{ md: 'flex' }}>
-        <Box width={'20rem'} mr={45}>
-          <Avatar src="/static/arthur.jpeg" size="full" loading="lazy"></Avatar>
+      <Box display="flex" flexDir={{ base: 'column', md: 'row' }} alignItems="center" justifyContent="center">
+        <Box maxW={'18rem'} mr={{ base: '0', md: '2rem' }} mb={{ base: '2rem', md: '0' }} h={'auto'}>
+          <Avatar
+            src="/static/arthur.jpeg"
+            size="full"
+            loading="lazy"
+            maxW={['90vw', '80vw', '70vw', '60vw', '50vw']}
+          ></Avatar>
         </Box>
         <Box>
           <Paragraph style={{ maxWidth: '360px' }}>
