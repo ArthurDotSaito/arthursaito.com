@@ -7,14 +7,17 @@ import { AmbientLight, DirectionalLight } from 'three';
 function ThreeJsScene() {
   const ambientLight = new AmbientLight(0xffffff, 0.5);
   const directionalLight = new DirectionalLight(0xffffff, 1);
+  const minZoom = 0.95;
+  const maxZoom = 4;
+  const cameraPosition: [x: number, y: number, z: number] = [0, 0, 2];
 
   return (
-    <Canvas>
+    <Canvas camera={{ position: cameraPosition, fov: 50 }}>
       <Suspense fallback={null}>
         <ambientLight />
         <directionalLight />
         <Model />
-        <OrbitControls />
+        <OrbitControls minDistance={minZoom} maxDistance={maxZoom} />
       </Suspense>
     </Canvas>
   );

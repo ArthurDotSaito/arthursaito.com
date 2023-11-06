@@ -11,7 +11,7 @@ export default function Index() {
         <ThreeJsScene />
       </AnimationContainer>
       <Box
-        height={'10rem'}
+        height={'6rem'}
         display={'flex'}
         justifyContent={'center'}
         alignItems={'center'}
@@ -21,7 +21,7 @@ export default function Index() {
         textAlign="center"
         bg={'whiteAlpha.200'}
         color={'white'}
-        fontSize={'2.5rem'}
+        fontSize={'1.7rem'}
         css={{ backdropFilter: 'blur(10px)' }}
       >
         Hello,
