@@ -3,6 +3,7 @@ import { Paragraph } from '@/components/Paragraph';
 import ThreeJsScene from '@/components/lib/ThreeScene';
 import { Avatar, Box } from '@/layout/ChakraUI';
 import TypewriterComponent from 'typewriter-effect';
+import { styled } from '../../stitches.config';
 
 export default function Index() {
   return (
@@ -33,6 +34,7 @@ export default function Index() {
           }}
         />
       </Box>
+      <HeadingBox>No excuses. Commit.</HeadingBox>
       <Box display="flex" flexDir={{ base: 'column', md: 'row' }} alignItems="center" justifyContent="center">
         <Box maxW={'18rem'} mr={{ base: '0', md: '2rem' }} mb={{ base: '2rem', md: '0' }} h={'auto'}>
           <Avatar
@@ -55,3 +57,10 @@ export default function Index() {
     </>
   );
 }
+
+const HeadingBox = styled('div', {
+  fontFamily: '$heading',
+  fontSize: '35px',
+  color: '$pink',
+  marginBottom: '1rem',
+});
