@@ -6,6 +6,7 @@ import TypewriterComponent from 'typewriter-effect';
 import { styled } from '../../stitches.config';
 import { BioSection } from '@/components/Bio';
 import Academics from '@/components/Academics';
+import Career from '@/components/Career';
 
 export default function Index() {
   return (
@@ -60,6 +61,10 @@ export default function Index() {
       <Container>
         <h2>Academics</h2>
         <Academics />
+      </Container>
+      <Container>
+        <h2>Career</h2>
+        <Career />
       </Container>
     </>
   );
