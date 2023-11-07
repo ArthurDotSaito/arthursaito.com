@@ -15,6 +15,7 @@
     "@react-three/drei": "^9.88.11",
     "@react-three/fiber": "^8.15.9",
     "@stitches/react": "^1.2.8",
+    "dayjs": "^1.11.10",
     "framer-motion": "^10.16.4",
     "next": "13.5.4",
     "primereact": "^10.0.9",

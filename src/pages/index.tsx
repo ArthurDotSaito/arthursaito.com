@@ -1,9 +1,10 @@
 import { AnimationContainer } from '@/components/Animation-Container';
 import { Paragraph } from '@/components/Paragraph';
 import ThreeJsScene from '@/components/lib/ThreeScene';
-import { Avatar, Box } from '@/layout/ChakraUI';
+import { Avatar, Box, Container, Heading } from '@/layout/ChakraUI';
 import TypewriterComponent from 'typewriter-effect';
 import { styled } from '../../stitches.config';
+import { BioSection } from '@/components/Bio';
 
 export default function Index() {
   return (
@@ -55,6 +56,7 @@ export default function Index() {
           </Paragraph>
         </Box>
       </Box>
+      <Container></Container>
     </>
   );
 }
