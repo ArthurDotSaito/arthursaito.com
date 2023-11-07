@@ -22,7 +22,7 @@ const career = [
     endDate: '2022-10-11',
   },
   {
-    company: 'The X-Team company',
+    company: 'The X-Team Company',
     role: 'Software Engineer Sr',
     startDate: '2018-04-03',
     endDate: '2023-10-01',
