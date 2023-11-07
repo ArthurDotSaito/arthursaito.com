@@ -2,19 +2,19 @@ const academics = [
   {
     instituition: 'University of London',
     degree: 'Master of Computer Science',
-    startDate: '01-01-2023',
+    startDate: '2023-01-01',
   },
   {
     instituition: 'University of Pennsylvania',
     degree: 'Master of Computer and Information Technology',
-    startDate: '01-01-2021',
-    endDate: '26-12-2022',
+    startDate: '2021-01-01',
+    endDate: '2022-12-26',
   },
   {
     instituition: 'The Federal University of Technology - Parana (UTFPR)',
     degree: 'Mechanical engineering',
-    startDate: '01-01-2016',
-    endDate: '26-12-2021',
+    startDate: '2016-01-01',
+    endDate: '2021-12-26',
   },
 ];
 

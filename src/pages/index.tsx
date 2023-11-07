@@ -5,6 +5,7 @@ import { Avatar, Box, Container, Heading } from '@/layout/ChakraUI';
 import TypewriterComponent from 'typewriter-effect';
 import { styled } from '../../stitches.config';
 import { BioSection } from '@/components/Bio';
+import Academics from '@/components/Academics';
 
 export default function Index() {
   return (
@@ -56,7 +57,10 @@ export default function Index() {
           </Paragraph>
         </Box>
       </Box>
-      <Container></Container>
+      <Container>
+        <h2>Academics</h2>
+        <Academics />
+      </Container>
     </>
   );
 }
