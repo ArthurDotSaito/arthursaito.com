@@ -4,11 +4,11 @@ Just my own website, where I exercise the power of creation. I'm not a big fan o
 
 ## Tech Stack
 
-- Base: Next.js - A React framework for the web,
-- Styling:
+- <strong>Base</strong>: Next.js - A React framework for the web,
+- <strong>Styling</strong>:
   - Stitches - A CSS-in-JS, SSR, multi-variant support
   - Chackra UI - A simple and modular component library
-- Animation:
+- <strong>Animation</strong>:
   - Framer Motion: A animation library for React
   - Three.js: A JS 3D library
 
