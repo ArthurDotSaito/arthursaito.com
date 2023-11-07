@@ -34,7 +34,7 @@ export default function Index() {
           }}
         />
       </Box>
-      <HeadingBox>No excuses. Commit.</HeadingBox>
+      <HeadingBox>Just commiting everywhere</HeadingBox>
       <Box display="flex" flexDir={{ base: 'column', md: 'row' }} alignItems="center" justifyContent="center">
         <Box maxW={'18rem'} mr={{ base: '0', md: '2rem' }} mb={{ base: '2rem', md: '0' }} h={'auto'}>
           <Avatar
@@ -48,9 +48,10 @@ export default function Index() {
           <Paragraph style={{ maxWidth: '360px' }}>
             <strong>Hey, I'm Arthur Saito </strong>I started as a software engineer in 2015. Brazilian, born in Fukui,
             Japan and living in Brazil. Just like many developers, I like to solve problems out there and I'm constantly
-            working on some kind of problematic parallel challenge. When not online, I'm mostly likely traveling,
-            gaming, playing some random sports or discovering new ways to drink coffe. Each interest adds a unique
-            flavor to my life, shaping the way I engage with the world both online and off.
+            working on some kind of problematic parallel challenge. When not online, I'm mostly likely gaming, playing
+            some random sports or discovering new ways to drink coffe. My interests are very diverse, although sometimes
+            restricted, and each one of them adds a unique flavor to my life, shaping the way I engage with the world
+            both online and off.
           </Paragraph>
         </Box>
       </Box>
@@ -62,5 +63,5 @@ const HeadingBox = styled('div', {
   fontFamily: '$heading',
   fontSize: '35px',
   color: '$pink',
-  marginBottom: '1rem',
+  marginBottom: '2rem',
 });
