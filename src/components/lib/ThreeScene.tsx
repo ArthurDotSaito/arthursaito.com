@@ -17,7 +17,7 @@ function ThreeJsScene() {
         <ambientLight />
         <directionalLight />
         <Model />
-        <OrbitControls minDistance={minZoom} maxDistance={maxZoom} />
+        <OrbitControls minDistance={minZoom} maxDistance={maxZoom} autoRotate autoRotateSpeed={3} />
       </Suspense>
     </Canvas>
   );
