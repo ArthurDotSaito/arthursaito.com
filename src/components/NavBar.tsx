@@ -3,17 +3,15 @@ import { useState } from 'react';
 import { styled } from '../../stitches.config';
 import Link from 'next/link';
 import { motion } from 'framer-motion';
+import Image from 'next/image';
 
 export default function NavBar() {
-  const pages = ['home', 'sobre', 'artigos'];
+  const pages = ['home', 'about', 'notes'];
   const router = useRouter();
   const [selected, setSelectedTab] = useState('');
 
   return (
     <Header>
-      <Link href="/" passHref>
-        <ButtonLogo>AS</ButtonLogo>
-      </Link>
       <Nav>
         <List>
           {pages.map((page) => {
@@ -43,9 +41,6 @@ export default function NavBar() {
           })}
         </List>
       </Nav>
-      <Link href="/" passHref>
-        <ButtonLogo>AS</ButtonLogo>
-      </Link>
     </Header>
   );
 }
@@ -77,12 +72,15 @@ const ButtonHeader = styled('div', {
   '&:hover': { background: '$hover' },
 });
 
-const ButtonLogo = styled(ButtonHeader, {
-  fontWeight: 700,
-  fontSize: '32px',
-  textDecoration: 'none',
-  marginLeft: '12px',
-  fontFamily: '$heading',
+const ImageLogo = styled(Image, {
+  marginLeft: '2rem',
+  position: 'relative',
+  display: 'block',
+  width: '48px',
+  height: '48px',
+  '& img': {
+    textDecoration: 'none',
+  },
 });
 
 const List = styled('ul', {
