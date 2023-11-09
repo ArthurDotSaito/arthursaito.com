@@ -4,6 +4,7 @@ import { styled } from '../../stitches.config';
 import Link from 'next/link';
 import { motion } from 'framer-motion';
 import Image from 'next/image';
+import LinkItem from './LinkItem';
 
 export default function NavBar() {
   const pages = ['home', 'about', 'notes'];
@@ -15,27 +16,29 @@ export default function NavBar() {
       <Nav>
         <List>
           {pages.map((page) => {
-            const path = `/${page.toLowerCase()}`;
+            const path = page === 'home' ? '/' : `/${page.toLowerCase()}`;
             const isHovered = selected === page;
             return (
               <li key={page} onMouseEnter={() => setSelectedTab(page)}>
-                {isHovered ? (
-                  <NavBarPageTitleHovered
-                    layoutId="nav"
-                    initial={{ opacity: 0, scale: 0.95 }}
-                    animate={{ opacity: 1, scale: 1 }}
-                    exit={{ opacity: 0, scale: 0.95 }}
-                  >
-                    {page}
-                  </NavBarPageTitleHovered>
-                ) : (
-                  <NavBarPageTitle
-                    layoutId={`title-${page}`}
-                    transition={{ type: 'spring', bounce: 0.5, duration: 0.5 }}
-                  >
-                    {page}
-                  </NavBarPageTitle>
-                )}
+                <LinkItem href={path} path={router.pathname}>
+                  {isHovered ? (
+                    <NavBarPageTitleHovered
+                      layoutId="nav"
+                      initial={{ opacity: 0, scale: 0.95 }}
+                      animate={{ opacity: 1, scale: 1 }}
+                      exit={{ opacity: 0, scale: 0.95 }}
+                    >
+                      {page}
+                    </NavBarPageTitleHovered>
+                  ) : (
+                    <NavBarPageTitle
+                      layoutId={`title-${page}`}
+                      transition={{ type: 'spring', bounce: 0.5, duration: 0.5 }}
+                    >
+                      {page}
+                    </NavBarPageTitle>
+                  )}
+                </LinkItem>
               </li>
             );
           })}
