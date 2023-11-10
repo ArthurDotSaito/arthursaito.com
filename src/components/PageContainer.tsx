@@ -5,7 +5,6 @@ export const PageContainer = styled('main', {
   lineHeight: '32px',
   color: '$secondary',
   background: '$background',
-  zIndex: 1,
   height: '100%',
   paddingTop: '100px',
 });

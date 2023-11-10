@@ -1,7 +1,6 @@
 import { useRouter } from 'next/router';
 import { useState } from 'react';
 import { styled } from '../../stitches.config';
-import Link from 'next/link';
 import { motion } from 'framer-motion';
 import Image from 'next/image';
 import LinkItem from './LinkItem';

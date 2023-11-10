@@ -1,6 +1,4 @@
-import { AnimationContainer } from '@/components/Animation-Container';
 import { Paragraph } from '@/components/Paragraph';
-import ThreeJsScene from '@/components/lib/ThreeScene';
 import { Avatar, Box, Container, Heading } from '@/layout/ChakraUI';
 import TypewriterComponent from 'typewriter-effect';
 import { styled } from '../../stitches.config';
