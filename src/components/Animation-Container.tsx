@@ -1,7 +1,7 @@
 import { Box, Spinner } from '@/layout/ChakraUI';
 import { forwardRef } from 'react';
 
-export const DogSpinner = () => (
+export const AnimationSpiner = () => (
   <Spinner
     size="xl"
     position="absolute"
@@ -30,7 +30,7 @@ export const AnimationContainer = forwardRef<HTMLDivElement, React.PropsWithChil
 const Loader = () => {
   return (
     <AnimationContainer>
-      <DogSpinner />
+      <AnimationSpiner />
     </AnimationContainer>
   );
 };

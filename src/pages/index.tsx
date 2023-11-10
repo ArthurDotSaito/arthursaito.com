@@ -4,16 +4,12 @@ import ThreeJsScene from '@/components/lib/ThreeScene';
 import { Avatar, Box, Container, Heading } from '@/layout/ChakraUI';
 import TypewriterComponent from 'typewriter-effect';
 import { styled } from '../../stitches.config';
-import { BioSection } from '@/components/Bio';
 import Academics from '@/components/Academics';
 import Career from '@/components/Career';
 
 export default function Index() {
   return (
     <>
-      <AnimationContainer>
-        <ThreeJsScene />
-      </AnimationContainer>
       <Box
         height={{ base: 'auto', md: '6rem' }}
         display={'flex'}
