@@ -18,7 +18,7 @@ export default function About() {
         </Paragraph>
       </Box>
       <HeadingBox>On the Web</HeadingBox>
-      <List>
+      <List spacing={'15px'}>
         <ListItem>
           <Link href="https://github.com/ArthurDotSaito" target="_blank">
             <Button
@@ -26,6 +26,7 @@ export default function About() {
               colorScheme="teal"
               leftIcon={<i className="pi pi-github" style={{ fontSize: '2rem' }} />}
               border={'none'}
+              cursor={'pointer'}
             >
               @ArthurDotSaito
             </Button>
@@ -38,6 +39,7 @@ export default function About() {
               colorScheme="teal"
               leftIcon={<i className="pi pi-linkedin" style={{ fontSize: '2rem' }} />}
               border={'none'}
+              cursor={'pointer'}
             >
               linkedin.com/arthur-saito
             </Button>
@@ -50,6 +52,7 @@ export default function About() {
               colorScheme="teal"
               leftIcon={<i className="pi pi-instagram" style={{ fontSize: '2rem' }} />}
               border={'none'}
+              cursor={'pointer'}
             >
               @arthurysaito
             </Button>
