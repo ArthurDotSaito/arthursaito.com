@@ -6,7 +6,8 @@ import { Providers } from '@/app/Providers';
 import React from 'react';
 import Head from 'next/head';
 import MotionAnimate from '@/components/MotionAnimate';
-import router, { useRouter } from 'next/router';
+import { useRouter } from 'next/router';
+import 'primeicons/primeicons.css';
 
 function App({ Component, pageProps }: AppProps) {
   const router = useRouter();
