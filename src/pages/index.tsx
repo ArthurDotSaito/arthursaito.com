@@ -1,9 +1,9 @@
 import { Paragraph } from '@/components/Paragraph';
 import { Avatar, Box, Container, Heading } from '@/layout/ChakraUI';
 import TypewriterComponent from 'typewriter-effect';
-import { styled } from '../../stitches.config';
 import Academics from '@/components/Academics';
 import Career from '@/components/Career';
+import HeadingBox from '@/components/TitleHeadingBox';
 
 export default function Index() {
   return (
@@ -63,10 +63,3 @@ export default function Index() {
     </>
   );
 }
-
-const HeadingBox = styled('div', {
-  fontFamily: '$heading',
-  fontSize: '35px',
-  color: '$pink',
-  marginBottom: '2rem',
-});

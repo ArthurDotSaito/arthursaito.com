@@ -21,7 +21,6 @@ export default function MotionAnimate({ children }: IProps) {
       }}
     >
       <motion.div
-        key={router.route}
         initial="hidden"
         animate="enter"
         exit="exit"

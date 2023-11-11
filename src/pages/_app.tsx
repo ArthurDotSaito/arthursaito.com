@@ -6,13 +6,10 @@ import { Providers } from '@/app/Providers';
 import React from 'react';
 import Head from 'next/head';
 import MotionAnimate from '@/components/MotionAnimate';
+import router, { useRouter } from 'next/router';
 
-const variants = {
-  hidden: { opacity: 0, x: 0, y: 20 },
-  enter: { opacity: 1, x: 0, y: 0 },
-  exit: { opacity: 0, x: -0, y: 20 },
-};
 function App({ Component, pageProps }: AppProps) {
+  const router = useRouter();
   return (
     <React.StrictMode>
       <Head>
@@ -21,7 +18,7 @@ function App({ Component, pageProps }: AppProps) {
       </Head>
       <Providers>
         <Page>
-          <MotionAnimate>
+          <MotionAnimate key={router.route}>
             <Component {...pageProps} />
           </MotionAnimate>
         </Page>
