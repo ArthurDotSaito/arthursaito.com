@@ -1,5 +1,4 @@
 import { AnimatePresence, motion } from 'framer-motion';
-import router from 'next/router';
 import { ReactNode } from 'react';
 
 interface IProps {

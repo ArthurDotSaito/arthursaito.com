@@ -1,6 +1,6 @@
 import { Paragraph } from '@/components/Paragraph';
 import HeadingBox from '@/components/TitleHeadingBox';
-import { Button, Container, Link, List, ListItem } from '@/layout/ChakraUI';
+import SocialMediaSection from '@/components/socialMediaPlatform';
 import { Box } from '@chakra-ui/layout';
 
 export default function About() {
@@ -18,47 +18,7 @@ export default function About() {
         </Paragraph>
       </Box>
       <HeadingBox>On the Web</HeadingBox>
-      <List spacing={'15px'}>
-        <ListItem>
-          <Link href="https://github.com/ArthurDotSaito" target="_blank">
-            <Button
-              variant="ghost"
-              colorScheme="teal"
-              leftIcon={<i className="pi pi-github" style={{ fontSize: '2rem' }} />}
-              border={'none'}
-              cursor={'pointer'}
-            >
-              @ArthurDotSaito
-            </Button>
-          </Link>
-        </ListItem>
-        <ListItem>
-          <Link href="https://www.linkedin.com/in/arthur-saito/" target="_blank">
-            <Button
-              variant="ghost"
-              colorScheme="teal"
-              leftIcon={<i className="pi pi-linkedin" style={{ fontSize: '2rem' }} />}
-              border={'none'}
-              cursor={'pointer'}
-            >
-              linkedin.com/arthur-saito
-            </Button>
-          </Link>
-        </ListItem>
-        <ListItem>
-          <Link href="https://www.instagram.com/arthurysaito/">
-            <Button
-              variant="ghost"
-              colorScheme="teal"
-              leftIcon={<i className="pi pi-instagram" style={{ fontSize: '2rem' }} />}
-              border={'none'}
-              cursor={'pointer'}
-            >
-              @arthurysaito
-            </Button>
-          </Link>
-        </ListItem>
-      </List>
+      <SocialMediaSection />
     </>
   );
 }
