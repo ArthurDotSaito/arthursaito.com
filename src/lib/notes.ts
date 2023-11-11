@@ -1,16 +1,20 @@
 import { join } from 'path';
 import fs from 'fs';
 import grayMatter from 'gray-matter';
+import { remark } from 'remark';
+import remarkHtml from 'remark-html';
+import { setupShiki, remarkShiki } from './shikiSyntax';
 
 interface NoteDetails {
   slug?: string;
   content?: string;
+  date?: string;
   [key: string]: string | undefined;
 }
 
 const notesDirectory = join(process.cwd(), 'notes');
 
-const fetchNotesSlug = () => fs.readFileSync(notesDirectory);
+const fetchNotesSlug = () => fs.readdirSync(notesDirectory);
 
 const fetchNotesBySlug = (slug: string, fields = []) => {
   const noteSlug = slug.replace(/\.md$/, '');
@@ -28,4 +32,23 @@ const fetchNotesBySlug = (slug: string, fields = []) => {
   return noteDetails;
 };
 
-export default fetchNotesBySlug;
+const fetchAllNotes = (fields = []) => {
+  const slugs = fetchNotesSlug();
+  const notes = slugs
+    .map((slug) => fetchNotesBySlug(slug, fields))
+    .sort((a, b) => {
+      if (!a.date || !b.date) return 0;
+      return a.date < b.date ? -1 : 1;
+    });
+
+  return notes;
+};
+
+const mdToHtml = async (md: string) => {
+  await setupShiki();
+  const processedResult = await remark().use(remarkHtml, { sanitize: false }).use(remarkShiki).process(md);
+
+  return processedResult.toString();
+};
+
+export default { fetchNotesBySlug, fetchAllNotes, mdToHtml };
