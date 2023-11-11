@@ -30,7 +30,7 @@ const SocialMediaSection = () => {
         </Link>
       </ListItem>
       <ListItem>
-        <Link href="https://www.instagram.com/arthurysaito/">
+        <Link href="https://www.instagram.com/arthurysaito/" target="_blank">
           <Button
             variant="ghost"
             colorScheme="teal"

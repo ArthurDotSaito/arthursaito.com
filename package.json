@@ -17,11 +17,13 @@
     "@stitches/react": "^1.2.8",
     "dayjs": "^1.11.10",
     "framer-motion": "^10.16.4",
+    "gray-matter": "^4.0.3",
     "next": "13.5.4",
     "primeicons": "^6.0.1",
     "primereact": "^10.0.9",
     "react": "^18",
     "react-dom": "^18",
+    "remark": "^15.0.1",
     "three": "^0.158.0",
     "typewriter-effect": "^2.21.0"
   },
