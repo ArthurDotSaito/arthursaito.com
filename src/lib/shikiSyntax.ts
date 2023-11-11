@@ -1,8 +1,8 @@
-import { getHighlighter } from 'shiki';
+import { Highlighter, getHighlighter } from 'shiki';
 import { visit } from 'unist-util-visit';
 import { Root } from 'mdast';
 
-let highlighter: any;
+let highlighter: Highlighter;
 
 const setupShiki = async (options = {}) => {
   highlighter = await getHighlighter(options);
