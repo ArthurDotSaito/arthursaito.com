@@ -1,3 +1,3 @@
-export { Box, Spinner, Avatar, Container, Heading, Icon } from '@chakra-ui/react';
+export { Box, Spinner, Avatar, Container, Heading, Icon, Button } from '@chakra-ui/react';
 
 export { useColorModeValue, Link } from '@chakra-ui/react';

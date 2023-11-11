@@ -1,5 +1,6 @@
 import { Paragraph } from '@/components/Paragraph';
 import HeadingBox from '@/components/TitleHeadingBox';
+import { Button, Container } from '@/layout/ChakraUI';
 import { Box } from '@chakra-ui/layout';
 
 export default function About() {
@@ -17,9 +18,33 @@ export default function About() {
         </Paragraph>
       </Box>
       <HeadingBox>On the Web</HeadingBox>
-      <i className="pi pi-github" style={{ fontSize: '2rem' }}></i>
-      <i className="pi pi-linkedin" style={{ fontSize: '2rem' }}></i>
-      <i className="pi pi-instagram" style={{ fontSize: '2rem' }}></i>
+      <Box>
+        <Button
+          variant="ghost"
+          colorScheme="teal"
+          leftIcon={<i className="pi pi-github" style={{ fontSize: '2rem' }} />}
+        >
+          @ArthurDotSaito
+        </Button>
+      </Box>
+      <Box>
+        <Button
+          variant="ghost"
+          colorScheme="teal"
+          leftIcon={<i className="pi pi-linkedin" style={{ fontSize: '2rem' }} />}
+        >
+          linkedin.com/arthur-saito
+        </Button>
+      </Box>
+      <Box>
+        <Button
+          variant="ghost"
+          colorScheme="teal"
+          leftIcon={<i className="pi pi-instagram" style={{ fontSize: '2rem' }} />}
+        >
+          linkedin.com/arthur-saito
+        </Button>
+      </Box>
     </>
   );
 }
