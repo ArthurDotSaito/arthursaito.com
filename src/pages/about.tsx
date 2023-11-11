@@ -1,6 +1,6 @@
 import { Paragraph } from '@/components/Paragraph';
 import HeadingBox from '@/components/TitleHeadingBox';
-import { Button, Container } from '@/layout/ChakraUI';
+import { Button, Container, Link, List, ListItem } from '@/layout/ChakraUI';
 import { Box } from '@chakra-ui/layout';
 
 export default function About() {
@@ -18,33 +18,44 @@ export default function About() {
         </Paragraph>
       </Box>
       <HeadingBox>On the Web</HeadingBox>
-      <Box>
-        <Button
-          variant="ghost"
-          colorScheme="teal"
-          leftIcon={<i className="pi pi-github" style={{ fontSize: '2rem' }} />}
-        >
-          @ArthurDotSaito
-        </Button>
-      </Box>
-      <Box>
-        <Button
-          variant="ghost"
-          colorScheme="teal"
-          leftIcon={<i className="pi pi-linkedin" style={{ fontSize: '2rem' }} />}
-        >
-          linkedin.com/arthur-saito
-        </Button>
-      </Box>
-      <Box>
-        <Button
-          variant="ghost"
-          colorScheme="teal"
-          leftIcon={<i className="pi pi-instagram" style={{ fontSize: '2rem' }} />}
-        >
-          linkedin.com/arthur-saito
-        </Button>
-      </Box>
+      <List>
+        <ListItem>
+          <Link href="https://github.com/ArthurDotSaito" target="_blank">
+            <Button
+              variant="ghost"
+              colorScheme="teal"
+              leftIcon={<i className="pi pi-github" style={{ fontSize: '2rem' }} />}
+              border={'none'}
+            >
+              @ArthurDotSaito
+            </Button>
+          </Link>
+        </ListItem>
+        <ListItem>
+          <Link href="https://www.linkedin.com/in/arthur-saito/" target="_blank">
+            <Button
+              variant="ghost"
+              colorScheme="teal"
+              leftIcon={<i className="pi pi-linkedin" style={{ fontSize: '2rem' }} />}
+              border={'none'}
+            >
+              linkedin.com/arthur-saito
+            </Button>
+          </Link>
+        </ListItem>
+        <ListItem>
+          <Link href="https://www.instagram.com/arthurysaito/">
+            <Button
+              variant="ghost"
+              colorScheme="teal"
+              leftIcon={<i className="pi pi-instagram" style={{ fontSize: '2rem' }} />}
+              border={'none'}
+            >
+              @arthurysaito
+            </Button>
+          </Link>
+        </ListItem>
+      </List>
     </>
   );
 }
