@@ -1,19 +1,16 @@
 import Link from 'next/link';
 import { styled } from '../../stitches.config';
 import { fetchAllNotes } from '../lib/notes';
+import { NotesPageProps } from '@/pages/notes';
 
-const allPosts = fetchAllNotes(['date', 'slug', 'title']);
-
-export const Articles = () => {
+export const Notes = ({ allPosts }: NotesPageProps) => {
   return (
     <ListGroup>
       {allPosts.map((post, index) => (
         <ListItem key={post.slug}>
           <Link href={`/notes/${post.slug}`} passHref>
-            <a>
-              <PostTitle>{post.title}</PostTitle>
-              <PostDate>{post.date ? new Date(post.date).toLocaleDateString() : 'No date'}</PostDate>
-            </a>
+            <PostTitle>{post.title}</PostTitle>
+            <PostDate>{post.date ? new Date(post.date).toLocaleDateString() : 'No date'}</PostDate>
           </Link>
         </ListItem>
       ))}
@@ -21,7 +18,7 @@ export const Articles = () => {
   );
 };
 
-export const ListGroup = styled('ul', {
+const ListGroup = styled('ul', {
   listStyle: 'none',
   margin: '10px 0 0',
   padding: '0',
@@ -47,3 +44,5 @@ const PostDate = styled('time', {
   fontSize: '16px',
   color: '#666', // Exemplo de cor, ajuste conforme seu design
 });
+
+export default Notes;
