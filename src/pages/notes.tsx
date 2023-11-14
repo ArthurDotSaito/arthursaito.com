@@ -8,7 +8,7 @@ interface NoteDetails {
   title: string;
   date: string;
 }
-interface NotesPageProps {
+export interface NotesPageProps {
   allPosts: NoteDetails[];
 }
 

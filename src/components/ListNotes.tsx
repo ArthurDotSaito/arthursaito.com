@@ -8,9 +8,11 @@ export const Notes = ({ allPosts }: NotesPageProps) => {
     <ListGroup>
       {allPosts.map((post, index) => (
         <ListItem key={post.slug}>
-          <Link href={`/notes/${post.slug}`} passHref>
-            <PostTitle>{post.title}</PostTitle>
-            <PostDate>{post.date ? new Date(post.date).toLocaleDateString() : 'No date'}</PostDate>
+          <Link href={`/${post.slug}`} passHref>
+            <NoteContainer>
+              <PostTitle>{post.title}</PostTitle>
+              <PostDate>{post.date ? new Date(post.date).toLocaleDateString() : 'No date'}</PostDate>
+            </NoteContainer>
           </Link>
         </ListItem>
       ))}
@@ -25,16 +27,25 @@ const ListGroup = styled('ul', {
 });
 
 const ListItem = styled('li', {
-  marginBottom: '20px',
-  '&:last-child': {
-    marginBottom: '0',
+  '&:hover': {
+    background: '$hover',
+    cursor: 'pointer',
   },
+  marginBottom: '20px',
+  padding: '10px',
+  borderRadius: '0.5rem',
+  width: '100%',
+});
+
+const NoteContainer = styled('div', {
+  display: 'flex',
+  justifyContent: 'space-between',
 });
 
 const PostTitle = styled('h2', {
   fontSize: '20px',
   margin: '0',
-  color: '#0070f3', // Exemplo de cor, ajuste conforme seu design
+  color: '$red',
   '&:hover': {
     textDecoration: 'underline',
   },
@@ -42,7 +53,7 @@ const PostTitle = styled('h2', {
 
 const PostDate = styled('time', {
   fontSize: '16px',
-  color: '#666', // Exemplo de cor, ajuste conforme seu design
+  color: '$secondary',
 });
 
 export default Notes;
