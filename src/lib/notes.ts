@@ -16,7 +16,7 @@ const notesDirectory = join(process.cwd(), 'notes');
 
 const fetchNotesSlug = () => fs.readdirSync(notesDirectory);
 
-const fetchNotesBySlug = (slug: string, fields = []) => {
+const fetchNotesBySlug = (slug: string, fields: string[] = []) => {
   const noteSlug = slug.replace(/\.md$/, '');
   const notePath = join(notesDirectory, `${noteSlug}.md`);
   const fileContent = fs.readFileSync(notePath, 'utf-8');
@@ -32,7 +32,7 @@ const fetchNotesBySlug = (slug: string, fields = []) => {
   return noteDetails;
 };
 
-const fetchAllNotes = (fields = []) => {
+const fetchAllNotes = (fields: string[] = []) => {
   const slugs = fetchNotesSlug();
   const notes = slugs
     .map((slug) => fetchNotesBySlug(slug, fields))
@@ -51,4 +51,4 @@ const mdToHtml = async (md: string) => {
   return processedResult.toString();
 };
 
-export default { fetchNotesBySlug, fetchAllNotes, mdToHtml };
+export { fetchNotesBySlug, fetchAllNotes, mdToHtml };
