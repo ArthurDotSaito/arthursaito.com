@@ -2,10 +2,31 @@ import { Paragraph } from '@/components/Paragraph';
 import HeadingBox from '@/components/TitleHeadingBox';
 import SocialMediaSection from '@/components/socialMediaPlatform';
 import { Box } from '@chakra-ui/layout';
+import Head from 'next/head';
 
-export default function About() {
+interface IProps {
+  title: string;
+  description: string;
+}
+
+export async function getStaticProps() {
+  const meta = {
+    title: 'Arthur Saito - About',
+    description: 'Here is some information about why this webpage exists. Also, there is some social media stuff',
+  };
+
+  return { props: meta };
+}
+
+export default function About(props: IProps) {
+  const { title, description } = props;
   return (
     <>
+      <Head>
+        <title>{title}</title>
+        <meta content={description} name="description" />
+        <meta content={description} property="og:description" />
+      </Head>
       <HeadingBox>Ohai O/</HeadingBox>
       <Box mb={14}>
         <Paragraph>
