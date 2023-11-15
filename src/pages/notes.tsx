@@ -4,7 +4,7 @@ import { Box } from '@/layout/ChakraUI';
 import { fetchAllNotes } from '@/lib/notes';
 import Head from 'next/head';
 
-interface NoteDetails {
+export interface NoteDetails {
   slug: string;
   title: string;
   date: string;
@@ -51,7 +51,7 @@ export default function Notes({ allPosts, meta }: NotesPageProps) {
         </Paragraph>
       </Box>
       <Box>
-        <Articles allPosts={allPosts}></Articles>
+        <Articles allPosts={allPosts} meta={meta}></Articles>
       </Box>
     </>
   );
