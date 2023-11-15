@@ -4,10 +4,35 @@ import TypewriterComponent from 'typewriter-effect';
 import Academics from '@/components/Academics';
 import Career from '@/components/Career';
 import HeadingBox from '@/components/TitleHeadingBox';
+import Head from 'next/head';
 
-export default function Index() {
+interface IProps {
+  title: string;
+  image: string;
+  description: string;
+}
+
+export async function getStaticProps() {
+  const meta = {
+    title: 'Arthur Saito',
+    image: './static/arthur.jpeg',
+    description:
+      'Arthur Saito is a Brazilian developer. As many developers, like to solve challenges. When not online, he is most likely playing something, traveling or trying to find new ways to drink coffe',
+  };
+
+  return { props: meta };
+}
+
+export default function Index(props: IProps) {
+  const { title, image, description } = props;
   return (
     <>
+      <Head>
+        <title>{title}</title>
+        <meta content={title} property="og:title" />
+        <meta content={description} property="og:description" />
+        <meta content={description} name="description" />
+      </Head>
       <Box
         height={{ base: 'auto', md: '6rem' }}
         display={'flex'}
