@@ -32,7 +32,7 @@ const fetchNotesBySlug = (slug: string, fields: string[] = []) => {
   return noteDetails;
 };
 
-const fetchAllNotes = (fields: string[] = []) => {
+const fetchAllNotes = async (fields: string[] = []) => {
   const slugs = fetchNotesSlug();
   const notes = slugs
     .map((slug) => fetchNotesBySlug(slug, fields))
