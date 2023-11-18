@@ -11,6 +11,7 @@ import 'primeicons/primeicons.css';
 
 function App({ Component, pageProps }: AppProps) {
   const router = useRouter();
+  const Layout = (Component as any).Layout || Page;
   return (
     <React.StrictMode>
       <Head>
@@ -18,11 +19,11 @@ function App({ Component, pageProps }: AppProps) {
         <link rel="icon" href="/icon.png" />
       </Head>
       <Providers>
-        <Page>
+        <Layout {...pageProps}>
           <MotionAnimate key={router.route}>
             <Component {...pageProps} />
           </MotionAnimate>
-        </Page>
+        </Layout>
       </Providers>
     </React.StrictMode>
   );

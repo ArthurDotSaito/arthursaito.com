@@ -42,11 +42,7 @@ One of my goals for this year was to explore more places. Although all these lon
 - **2013:** 18 talks and 3 workshops. 12 cities in 3 different countries.
 - **2014:** 21 talks and 4 workshops. 18 cities in 8 different countries.
 
-![Graph: Talks per location](/static/img/posts/stats-2014-talks-map.jpg)
-
 For obvious reasons, I also wanted to give more talks in English rather than Portuguese and I'm happy to see this plan going pretty well too.
-
-![Graph: Talks per language](/static/img/posts/stats-2014-talks-per-language.jpg)
 
 <h2 style="text-align: center;" id="2014-blogposts">Blogposts</h2>
 
@@ -56,13 +52,9 @@ Along the years I started to write more in other blogs than in my own site. I li
 
 My favorite blogpost this year was written in Portuguese and is called ["Ser popular é uma merda"](https://medium.com/@zenorocha/ser-popular-e-uma-merda-b739836e4407). It was something that I had to get off my chest about how being popular sucks, however even with all the exposure and bad judgment that people make about you it still worth it somehow.
 
-![Post: Ser popular é uma merda](/static/img/posts/stats-2014-post-highlight.png)
-
 ### Stats
 
 I must admit, this year I spent more time consuming written content than actually producing it. Amazon and its goddamn Kindle are probably the main responsible for that, I just love buying and reading stuff there. Anyway, it's time to get back to writing, don't you think?
-
-![Graph: Posts per blog](/static/img/posts/stats-2014-posts-per-blog.jpg)
 
 <h2 style="text-align: center;" id="2014-podcasts">Podcasts</h2>
 
@@ -75,8 +67,6 @@ When we first started, there were no podcasts about front-end development stuff 
 ### Highlights
 
 For me the best episode in 2014 was [ZOFE #17](http://zofe.com.br/posts/tcheretche-tcheretche-tcheretche-tchetche/) with [Miller Medeiros](https://twitter.com/millermedeiros) and the reason why I choose this one is very simple: we recorded it in the very same room in São Paulo.
-
-![ZOFE #17](/static/img/posts/stats-2014-zofe-17.jpg)
 
 Still, nothing can be compared by the joy we had in the day before [BrazilJS Conf](http://braziljs.com.br/). This [little event](http://www.eventick.com.br/encontro-zofe-2014) in Porto Alegre to get together some ZOFE fans was one of the most special moments I had in my entire year.
 
@@ -94,8 +84,6 @@ Even though I might disappoint some people by leaving the podcast, I'm excited t
 
 Thank you so much for all of you wearing our t-shirts and showing our stickers in your computers everyday.
 
-![ZOFE Shirt](/static/img/posts/stats-2014-zofe-shirt.jpg)
-
 <h2 style="text-align: center;" id="2014-projects">Projects</h2>
 
 I'm really afraid of becoming those kind of people that only talks but don't do anything. That's why I try to keep my [GitHub profile](https://github.com/zenorocha) pretty active by contributing to many different projects.
@@ -106,21 +94,9 @@ One of the things I liked about last year was that I got more in contact with or
 
 **[WebComponents.org](http://webcomponents.org)**, launched in May.
 
-<a href="http://webcomponents.org">
-  <img src="/static/img/posts/stats-2014-wcorg.jpg" alt="Logo: webcomponents.org">
-</a>
-
 **[Tracking.JS](http://trackingjs.com)**, re-launched in July.
 
-<a href="http://trackingjs.com">
-  <img src="/static/img/posts/stats-2014-trackingjs.jpg" alt="Logo: tracking.js">
-</a>
-
 **[Senna](http://sennajs.com)**, launched in August.
-
-<a href="http://sennajs.com">
-  <img src="/static/img/posts/stats-2014-sennajs.jpg" alt="Logo: sennajs.com">
-</a>
 
 Some projects has been developed as a duo with [Eduardo Lundgren](https://twitter.com/eduardolundgren), this is working really well and we hope to release even more exciting stuff in 2015. By the way, finding someone that you can count with and complement your skills makes the whole difference.
 
@@ -142,21 +118,10 @@ One of the nice things about being a [Google Developer Expert](https://developer
 
 Because of that, we had this idea to create a video series about [Chrome DevTools](https://developer.chrome.com/devtools) in Portuguese. This project was by far one of the things that consumed more energy in a short period of time. I had to create the whole content by myself in a week and we took a whole day to record it.
 
-<div class="iframe-wrap">
-  <iframe src="//www.youtube.com/embed/videoseries?list=PLiGzvgwA5Gmgnq5vPjJxW52hDiX3ndL53">
-  </iframe>
-</div>
-
 ### Stats
 
 I don't always record screencasts but when I do I try to do as polished as possible. Here you can see the most popular ones:
 
-- **2012:** [Sublime Text 2](https://www.youtube.com/watch?v=Ms3Vsz7Jc3A) - 36,050 views
-- **2013:** [Bye Zen Coding, Hello Emmet!](https://www.youtube.com/watch?v=sxW-V24MTXI) - 73,460 views
-- **2014:** [Chrome DevTools](https://www.youtube.com/playlist?list=PLiGzvgwA5Gmgnq5vPjJxW52hDiX3ndL53) - 41,786 views
-
 <h2 style="text-align: center;">What's next?</h2>
-
-[Hard work](https://twitter.com/zenorocha/status/502005181161410561).
 
 2014 was amazing and I'm sure 2015 will bring even more exciting stuff. Thank you for reading and being a part of all this.

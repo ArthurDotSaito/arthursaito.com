@@ -3,6 +3,7 @@ import { fetchAllNotes, fetchNotesBySlug, mdToHtml } from '@/lib/notes';
 import { ArticleJsonLd } from 'next-seo';
 import Head from 'next/head';
 import NotFound from './404';
+import NoteLayout from '@/layout/NoteLayout';
 
 export async function getStaticPaths() {
   const notes = await fetchAllNotes(['slug']);
@@ -68,5 +69,7 @@ const Note = (props: NotesStaticProps) => {
     </>
   );
 };
+
+Note.Layout = NoteLayout;
 
 export default Note;
