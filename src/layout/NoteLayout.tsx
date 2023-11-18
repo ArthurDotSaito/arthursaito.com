@@ -3,15 +3,19 @@ import { NotesStaticProps } from '@/core/types/types';
 import { styled } from '@stitches/react';
 import NavBar from '@/components/NavBar';
 import { PageContainer } from '@/components/PageContainer';
+import Date from '@/components/Date';
 
 export default function NoteLayout({ title, image, date, content }: NotesStaticProps) {
   console.log(title);
+  console.log(date);
   return (
     <BaseWrapper>
       <NavBar />
       <PageContainer>
         <PostContentTitle>{title}</PostContentTitle>
-        <PostContentSubtitle></PostContentSubtitle>
+        <PostContentSubtitle>
+          <Date dateString={date}></Date>
+        </PostContentSubtitle>
       </PageContainer>
     </BaseWrapper>
   );
