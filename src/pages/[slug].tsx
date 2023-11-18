@@ -2,6 +2,7 @@ import { NotesStaticProps, StaticPropsParams } from '@/core/types/types';
 import { fetchAllNotes, fetchNotesBySlug, mdToHtml } from '@/lib/notes';
 import { ArticleJsonLd } from 'next-seo';
 import Head from 'next/head';
+import NotFound from './404';
 
 export async function getStaticPaths() {
   const notes = await fetchAllNotes(['slug']);
@@ -21,7 +22,7 @@ export async function getStaticProps({ params }: StaticPropsParams) {
   try {
     const notes = fetchNotesBySlug(params.slug, ['date', 'content', 'title', 'image', 'description', 'slug']);
     const content = await mdToHtml(notes.content || '');
-    console.log(notes.date);
+
     return {
       props: {
         ...notes,
@@ -35,6 +36,10 @@ export async function getStaticProps({ params }: StaticPropsParams) {
 }
 
 const Note = (props: NotesStaticProps) => {
+  if (!props.title || !props.description || !props.slug || !props.date || !props.content) {
+    return <NotFound />;
+  }
+
   const title = `${props.title} - Arthur S.`;
   const description = `${props.description}`;
   const url = `http://localhost:3000/${props.slug}`;
