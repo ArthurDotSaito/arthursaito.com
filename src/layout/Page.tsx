@@ -22,6 +22,7 @@ export default function Page({ children }: any) {
         )}
         <PageStandardContent>{children}</PageStandardContent>
       </PageContainer>
+
       <Footer />
     </BaseWrapper>
   );

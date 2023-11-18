@@ -2,12 +2,17 @@ import { BaseWrapper } from '@/components/BaseWrapper';
 import { NotesStaticProps } from '@/core/types/types';
 import { styled } from '@stitches/react';
 import NavBar from '@/components/NavBar';
-import { PageContainer } from '@/components/PageContainer';
+import { PageContainer, PageStandardContent } from '@/components/PageContainer';
 import Date from '@/components/Date';
 
-export default function NoteLayout({ title, image, date, content }: NotesStaticProps) {
-  console.log(title);
-  console.log(date);
+type NoteLayoutProps = {
+  title: string;
+  image: string;
+  date: string;
+  children: React.ReactNode;
+};
+
+export default function NoteLayout({ title, image, date, children }: NoteLayoutProps) {
   return (
     <BaseWrapper>
       <NavBar />
@@ -16,6 +21,7 @@ export default function NoteLayout({ title, image, date, content }: NotesStaticP
         <PostContentSubtitle>
           <Date dateString={date}></Date>
         </PostContentSubtitle>
+        <PageStandardContent>{children}</PageStandardContent>
       </PageContainer>
     </BaseWrapper>
   );
