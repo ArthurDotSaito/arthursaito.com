@@ -4,7 +4,11 @@ export interface StaticPropsParams {
   };
 }
 export interface NotesStaticProps {
-  notes: NoteDetails;
+  slug: string;
+  title: string;
+  date: string;
+  description?: string;
+  image?: string;
   content: string;
 }
 

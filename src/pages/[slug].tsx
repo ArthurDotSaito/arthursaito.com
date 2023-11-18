@@ -5,6 +5,7 @@ import Head from 'next/head';
 
 export async function getStaticPaths() {
   const notes = await fetchAllNotes(['slug']);
+
   const paths = notes.map((n) => {
     return {
       params: {
@@ -20,7 +21,7 @@ export async function getStaticProps({ params }: StaticPropsParams) {
   try {
     const notes = fetchNotesBySlug(params.slug, ['date', 'content', 'title', 'image', 'description', 'slug']);
     const content = await mdToHtml(notes.content || '');
-
+    console.log(notes.date);
     return {
       props: {
         ...notes,
@@ -30,15 +31,16 @@ export async function getStaticProps({ params }: StaticPropsParams) {
     };
   } catch (error) {
     console.log(error);
+    return { props: { errorCode: 404, errorMessage: 'Page not found' } };
   }
 }
 
 const Note = (props: NotesStaticProps) => {
-  const title = `${props.notes.title} - Arthur S.`;
-  const description = `${props.notes.description}`;
-  const url = `http://localhost:3000/${props.notes.slug}`;
-  const date = new Date(props.notes.date).toISOString();
-  const images = `${props.notes.image}`;
+  const title = `${props.title} - Arthur S.`;
+  const description = `${props.description}`;
+  const url = `http://localhost:3000/${props.slug}`;
+  const date = new Date(props.date).toISOString();
+  const images = `${props.image}`;
 
   return (
     <>
@@ -62,3 +64,5 @@ const Note = (props: NotesStaticProps) => {
     </>
   );
 };
+
+export default Note;
