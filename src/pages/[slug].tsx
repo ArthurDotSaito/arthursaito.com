@@ -30,7 +30,6 @@ export async function getStaticProps({ params }: StaticPropsParams) {
       revalidate: 120,
     };
   } catch (error) {
-    console.log(error);
     return { props: { errorCode: 404, errorMessage: 'Page not found' } };
   }
 }
