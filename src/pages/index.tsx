@@ -5,12 +5,7 @@ import Academics from '@/components/Academics';
 import Career from '@/components/Career';
 import HeadingBox from '@/components/TitleHeadingBox';
 import Head from 'next/head';
-
-interface IProps {
-  title: string;
-  image: string;
-  description: string;
-}
+import { MetaProps } from '@/core/types/types';
 
 export async function getStaticProps() {
   const meta = {
@@ -23,7 +18,7 @@ export async function getStaticProps() {
   return { props: meta };
 }
 
-export default function Index(props: IProps) {
+export default function Index(props: MetaProps) {
   const { title, image, description } = props;
   return (
     <>

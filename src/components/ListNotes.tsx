@@ -1,6 +1,6 @@
 import Link from 'next/link';
 import { styled } from '../../stitches.config';
-import { NotesPageProps } from '@/pages/notes';
+import { NotesPageProps } from '@/core/types/types';
 
 export const Notes = ({ allPosts }: NotesPageProps) => {
   return (

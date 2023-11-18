@@ -1,10 +1,5 @@
+import { NotesStaticProps, StaticPropsParams } from '@/core/types/types';
 import { fetchAllNotes, fetchNotesBySlug, mdToHtml } from '@/lib/notes';
-
-interface StaticPropsParams {
-  params: {
-    slug: string;
-  };
-}
 
 export async function getStaticPaths() {
   const notes = await fetchAllNotes(['slug']);
@@ -35,3 +30,8 @@ export async function getStaticProps({ params }: StaticPropsParams) {
     console.log(error);
   }
 }
+
+const Note = (props: NotesStaticProps) => {
+  const title = `${props.notes.title} - Arthur S.`;
+  const description = `${props.notes.description}`;
+};

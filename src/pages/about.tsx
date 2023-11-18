@@ -1,13 +1,9 @@
 import { Paragraph } from '@/components/Paragraph';
 import HeadingBox from '@/components/TitleHeadingBox';
 import SocialMediaSection from '@/components/socialMediaPlatform';
+import { MetaProps } from '@/core/types/types';
 import { Box } from '@chakra-ui/layout';
 import Head from 'next/head';
-
-interface IProps {
-  title: string;
-  description: string;
-}
 
 export async function getStaticProps() {
   const meta = {
@@ -18,7 +14,7 @@ export async function getStaticProps() {
   return { props: meta };
 }
 
-export default function About(props: IProps) {
+export default function About(props: MetaProps) {
   const { title, description } = props;
   return (
     <>
