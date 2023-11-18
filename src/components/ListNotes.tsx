@@ -2,7 +2,7 @@ import Link from 'next/link';
 import { styled } from '../../stitches.config';
 import { NotesPageProps } from '@/core/types/types';
 
-export const Notes = ({ allPosts }: NotesPageProps) => {
+export const AllNotes = ({ allPosts }: NotesPageProps) => {
   return (
     <ListGroup>
       {allPosts.map((post, index) => (
@@ -55,4 +55,4 @@ const PostDate = styled('time', {
   color: '$secondary',
 });
 
-export default Notes;
+export default AllNotes;

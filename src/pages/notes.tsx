@@ -1,4 +1,4 @@
-import Articles from '@/components/ListNotes';
+import { AllNotes } from '@/components/ListNotes';
 import { Paragraph } from '@/components/Paragraph';
 import { NotesPageProps } from '@/core/types/types';
 import { Box } from '@/layout/ChakraUI';
@@ -36,7 +36,7 @@ export default function Notes({ allPosts, meta }: NotesPageProps) {
         </Paragraph>
       </Box>
       <Box>
-        <Articles allPosts={allPosts} meta={meta}></Articles>
+        <AllNotes allPosts={allPosts} meta={meta}></AllNotes>
       </Box>
     </>
   );

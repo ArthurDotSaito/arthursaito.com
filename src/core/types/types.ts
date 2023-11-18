@@ -5,6 +5,7 @@ export interface StaticPropsParams {
 }
 export interface NotesStaticProps {
   notes: NoteDetails;
+  content: string;
 }
 
 export interface NoteDetails {
@@ -12,6 +13,7 @@ export interface NoteDetails {
   title: string;
   date: string;
   description?: string;
+  image?: string;
 }
 
 export interface MetaProps {
