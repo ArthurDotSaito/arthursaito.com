@@ -12,7 +12,7 @@ export const { styled, css, globalCss, keyframes, getCssText, theme, createTheme
       cyan: '#80ffea',
       primary: '#f2f2f2',
       secondary: '#8f9ba8',
-      background: '#08070b',
+      background: '#040D12',
       hover: '#212024',
       command: 'rgba(255, 255, 255, 0.05)',
     },
@@ -59,17 +59,6 @@ const globalStyles = globalCss({
     fontFamily: '$code',
     fontSize: '14px',
   },
-  svg: {
-    width: '32px',
-    height: '32px',
-    fill: 'white',
-  },
-  figure: {
-    margin: 0,
-  },
-  twitterwidget: {
-    margin: '0 auto',
-  },
   code: {
     background: '#151417',
     borderRadius: '$borderRadius',
@@ -112,13 +101,6 @@ const globalStyles = globalCss({
   strong: {
     color: '$primary',
     fontWeight: 500,
-  },
-  blockquote: {
-    borderLeft: '4px solid $hover',
-    color: '$secondary',
-    fontStyle: 'italic',
-    margin: '0',
-    paddingLeft: '20px',
   },
   a: {
     borderBottom: '.5px solid $secondary',
