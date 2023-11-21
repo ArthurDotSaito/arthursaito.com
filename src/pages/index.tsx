@@ -40,7 +40,7 @@ export default function Index(props: MetaProps) {
         bg={'whiteAlpha.200'}
         color={'white'}
         fontSize={{ base: 'auto', md: '1.7rem' }}
-        css={{ backdropFilter: 'blur(10px)' }}
+        css={{ backdropFilter: 'blur(10px)', fontWeight: 'bold' }}
       >
         Hello,
         <TypewriterComponent

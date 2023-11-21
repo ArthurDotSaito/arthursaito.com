@@ -20,6 +20,7 @@ export const { styled, css, globalCss, keyframes, getCssText, theme, createTheme
       body: 'Biotif, sans-serif',
       code: 'Fira Code, monospace',
       heading: 'Neuzeit Grotesk Bold, sans-serif',
+      typewritter: 'Fira Code',
     },
     space: {
       navHeightDesktop: '60px',
