@@ -9,7 +9,7 @@ function ThreeJsScene() {
   const directionalLight = new DirectionalLight(0xffffff, 1);
   const minZoom = 0.95;
   const maxZoom = 4;
-  const cameraPosition: [x: number, y: number, z: number] = [0, 0, 2];
+  const cameraPosition: [x: number, y: number, z: number] = [1, 2, 2];
 
   return (
     <Canvas camera={{ position: cameraPosition, fov: 50 }}>
