@@ -47,7 +47,6 @@ const Note = (props: NotesStaticProps) => {
   const url = `${baseUrl}/${props.slug}`;
   const date = new Date(props.date).toISOString();
   const images = props.image ? `${baseUrl}${props.image}` : `${baseUrl}/static/arthur.jpeg`;
-  console.log(images);
 
   return (
     <>
@@ -57,6 +56,7 @@ const Note = (props: NotesStaticProps) => {
         <meta content={description} name="description" />
         <meta content={description} property="og:description" />
         <meta content={url} property="og:url" />
+        <meta content={images} property="og:image"></meta>
       </Head>
       <ArticleJsonLd
         authorName="Arthur Saito"
