@@ -4,6 +4,7 @@ import { styled } from '@stitches/react';
 import NavBar from '@/components/NavBar';
 import { PageContainer, PageStandardContent } from '@/components/PageContainer';
 import Date from '@/components/Date';
+import Footer from '@/components/Footer';
 
 type NoteLayoutProps = {
   title: string;
@@ -23,6 +24,7 @@ export default function NoteLayout({ title, image, date, children }: NoteLayoutP
         </PostContentSubtitle>
         <PageStandardContent>{children}</PageStandardContent>
       </PageContainer>
+      <Footer />
     </BaseWrapper>
   );
 }
