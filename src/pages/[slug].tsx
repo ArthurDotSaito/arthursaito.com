@@ -46,7 +46,7 @@ const Note = (props: NotesStaticProps) => {
   const baseUrl = process.env.NEXT_PUBLIC_BASE_URL;
   const url = `${baseUrl}/${props.slug}`;
   const date = new Date(props.date).toISOString();
-  const images = `${props.image}`;
+  const images = props.image ? `${baseUrl}${props.image}` : `${baseUrl}/static/arthur.jpeg`;
 
   return (
     <>
