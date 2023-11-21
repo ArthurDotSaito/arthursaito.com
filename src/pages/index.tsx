@@ -10,7 +10,7 @@ import { MetaProps } from '@/core/types/types';
 export async function getStaticProps() {
   const meta = {
     title: 'Arthur Saito',
-    image: './static/arthur.jpeg',
+    image: '/static/arthur.jpeg',
     description:
       'Arthur Saito is a Brazilian developer. As many developers, like to solve challenges. When not online, he is most likely playing something, traveling or trying to find new ways to drink coffe',
   };
@@ -20,6 +20,8 @@ export async function getStaticProps() {
 
 export default function Index(props: MetaProps) {
   const { title, image, description } = props;
+  const url = process.env.NEXT_PUBLIC_BASE_URL;
+
   return (
     <>
       <Head>
@@ -27,7 +29,8 @@ export default function Index(props: MetaProps) {
         <meta content={title} property="og:title" />
         <meta content={description} property="og:description" />
         <meta content={description} name="description" />
-        <meta content={image} property="og:image"></meta>
+        <meta content={url} property="og:url" />
+        <meta content={`${url}${image}`} property="og:image"></meta>
       </Head>
       <Box
         height={{ base: 'auto', md: '6rem' }}
