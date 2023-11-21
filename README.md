@@ -11,6 +11,7 @@ Just my own website, where I exercise the power of creation. I'm not a big fan o
 - <strong>Animation</strong>:
   - Framer Motion: A animation library for React.
   - Three.js: A JS 3D library.
+- <strong>Deploy</strong>: Vercel: Two clicks and you can deploy a next based project.
 
 ## License
 
