@@ -55,7 +55,6 @@ const Header = styled('header', {
   minHeight: '59px',
   width: '100%',
   flexWrap: 'wrap',
-  position: 'fixed',
   top: '0',
   zIndex: 4,
   marginTop: '13px',
