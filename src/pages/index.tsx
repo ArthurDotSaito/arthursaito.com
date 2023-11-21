@@ -27,6 +27,7 @@ export default function Index(props: MetaProps) {
         <meta content={title} property="og:title" />
         <meta content={description} property="og:description" />
         <meta content={description} name="description" />
+        <meta content={image} property="og:image"></meta>
       </Head>
       <Box
         height={{ base: 'auto', md: '6rem' }}

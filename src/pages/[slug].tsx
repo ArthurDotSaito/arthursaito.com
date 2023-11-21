@@ -43,7 +43,8 @@ const Note = (props: NotesStaticProps) => {
 
   const title = `${props.title} - Arthur S.`;
   const description = `${props.description}`;
-  const url = `http://localhost:3000/${props.slug}`;
+  const baseUrl = process.env.NEXT_PUBLIC_BASE_URL;
+  const url = `${baseUrl}/${props.slug}`;
   const date = new Date(props.date).toISOString();
   const images = `${props.image}`;
 
