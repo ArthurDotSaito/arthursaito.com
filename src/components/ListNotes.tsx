@@ -12,6 +12,7 @@ export const AllNotes = ({ allPosts }: NotesPageProps) => {
               <PostTitle>{post.title}</PostTitle>
               <PostDate>{post.date ? new Date(post.date).toLocaleDateString() : 'No date'}</PostDate>
             </NoteContainer>
+            <PostSubtitle>{post.description}</PostSubtitle>
           </Link>
         </ListItem>
       ))}
@@ -48,6 +49,22 @@ const PostTitle = styled('h2', {
   '&:hover': {
     textDecoration: 'underline',
   },
+});
+
+const PostSubtitle = styled('h4', {
+  fontSize: '15px',
+  margin: '0',
+  color: '$secondary',
+  maxWidth: '100%',
+  overflow: 'hidden',
+  textOverflow: 'ellipsis',
+  whiteSpace: 'normal',
+  lineHeight: '1.2em',
+  maxHeight: '2.4em',
+  position: 'relative',
+  display: '-webkit-box',
+  '-webkit-box-orient': 'vertical',
+  '-webkit-line-clamp': 2,
 });
 
 const PostDate = styled('time', {

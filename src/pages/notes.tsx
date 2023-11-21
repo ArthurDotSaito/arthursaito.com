@@ -6,7 +6,7 @@ import { fetchAllNotes } from '@/lib/notes';
 import Head from 'next/head';
 
 export const getStaticProps = async () => {
-  const allPosts = await fetchAllNotes(['date', 'slug', 'title']);
+  const allPosts = await fetchAllNotes(['date', 'slug', 'title', 'description']);
   const meta = {
     title: 'Arthur Saito - Notes',
     description:
