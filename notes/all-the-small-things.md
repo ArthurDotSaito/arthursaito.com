@@ -1,8 +1,16 @@
 ---
 title: 'All the small things'
-description: 'Here we are in the end of 2023. Have you done your year-end retrospective?'
+description: 'No.It's not Blink-182. Here we are in the end of 2023. Have you done your year-end retrospective?'
 slug: '2023-small-things'
 date: '2022-11-22'
 ---
 
-We've reached that time of the year when I start to think, "Wow, the year is ending," and many people begin to plan their objectives and achievements for the next year. Although I'm uncertain about what I want to do in the upcoming year, it might be insightful to list some events or experiences that occurred this year, which have brought me to my current position. One of the many reasons that drove me to build this website is to 'put things on paper (or on a screen, in this case)', primarily because it helps me to sort out my thoughts
+We've reached that time of the year when I start to think, "Wow, the year is ending," and many people begin to plan their objectives and achievements for the next year. Although I'm uncertain about what I want to do in the upcoming year, it might be insightful to list some events or experiences that occurred this year, which have brought me to my current position. One of the many reasons that drove me to build this website is to 'put things on paper (or on a screen, in this case)', primarily because it helps me to sort out my thoughts.
+
+## Personal
+
+I don't have precise statistics, as I'm not one to meticulously track every habit or achievement throughout the week. However, in a broader sense, here's where I stand so far this year:
+
+- Books: I've read 13 books this year, many of which are technical, like 'Refactoring' by Martin Fowler.
+- Travels: I've traveled to three different countries this year: Ecuador, the USA, and Argentina. I visited 27 new cities, with the trip to Gramado being a highlight.
+- Sports or Gym: I always enjoy being active. I'm quite proud of my 177 check-ins at Gympass just this year and the time spent playing basketball games.
