@@ -14,3 +14,4 @@ I don't have precise statistics, as I'm not one to meticulously track every habi
 - Books: I've read 13 books this year, many of which are technical, like 'Refactoring' by Martin Fowler.
 - Travels: I've traveled to three different countries this year: Ecuador, the USA, and Argentina. I visited 27 new cities, with the trip to Gramado being a highlight.
 - Sports or Gym: I always enjoy being active. I'm quite proud of my 177 check-ins at Gympass just this year and the time spent playing basketball games.
+- Podcasts: I spent 7,233 minutes, or approximately 120 hours and 33 minutes, listening to podcasts. I mostly listen to them while working, driving, or even at the gym. Highlights include Hipsters.tech, Lex Friedman Podcast, Nerdcast, Naruhodo, and Science Vs.
