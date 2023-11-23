@@ -20,4 +20,4 @@ I don't have precise statistics, as I'm not one to meticulously track every habi
 
 This year was a game changer in my career. I made the decisive move to step away from industrial engineering, driven by a multitude of reasons. Notably, my increasing immersion in software engineering played a crucial role. Throughout my professional journey, shifting across different fields has become a second nature to me. However, after years of such diversity in my work, I've felt a growing urge to devote more time to my personal projects and life, all of which are intricately linked to the computer science field. There was a moment when my life seemed merely an extension of my work, and so I decided to change the things a little bit and “integrate” my work into my life as one of its many aspects.
 
-<img alt="my-life-and-work-sphere" src="/static/notes-images/life-work-spheres.png" class="note-image-full">
+<img alt="my-life-and-work-sphere" src="public/static/notes-images/life-work-spheres.png" class="note-image-full">
