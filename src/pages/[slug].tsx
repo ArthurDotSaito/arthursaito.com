@@ -29,7 +29,7 @@ export async function getStaticProps({ params }: StaticPropsParams) {
         ...notes,
         content,
       },
-      revalidate: 120,
+      revalidate: 60,
     };
   } catch (error) {
     return { props: { errorCode: 404, errorMessage: 'Page not found' } };
