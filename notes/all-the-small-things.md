@@ -15,3 +15,7 @@ I don't have precise statistics, as I'm not one to meticulously track every habi
 - Travels: I've traveled to three different countries this year: Ecuador, the USA, and Argentina. I visited 27 new cities, with the trip to Gramado being a highlight.
 - Sports or Gym: I always enjoy being active. I'm quite proud of my 177 check-ins at Gympass just this year and the time spent playing basketball games.
 - Podcasts: I spent 7,233 minutes, or approximately 120 hours and 33 minutes, listening to podcasts. I mostly listen to them while working, driving, or even at the gym. Highlights include Hipsters.tech, Lex Friedman Podcast, Nerdcast, Naruhodo, and Science Vs.
+
+## Career
+
+This year was a game changer in my career. I made the decisive move to step away from industrial engineering, driven by a multitude of reasons. Notably, my increasing immersion in software engineering played a crucial role. Throughout my professional journey, shifting across different fields has become a second nature to me. However, after years of such diversity in my work, I've felt a growing urge to devote more time to my personal projects and life, all of which are intricately linked to the computer science field. There was a moment when my life seemed merely an extension of my work, and so I decided to change the things a little bit and “integrate” my work into my life as one of its many aspects.
