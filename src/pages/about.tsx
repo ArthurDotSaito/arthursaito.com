@@ -30,7 +30,7 @@ export default function About(props: MetaProps) {
           the need to share something with others . Since I'm not the biggest fan of social media platforms like
           Instagram and/or even LinkedIn, the idea of an 'old school' blog seems more appealing to me. However, feel
           free to connect with or follow me on any of these social media platforms if you wish. I have a wide range of
-          interests and can write about anything that comes to mind in this space. although most 'notes' or 'articles'
+          interests and can write about anything that comes to mind in this space, although most 'notes' or 'articles'
           will be most likely about tech stuff.
         </Paragraph>
       </Box>
