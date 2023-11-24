@@ -1,6 +1,7 @@
 import Link from 'next/link';
 import { styled } from '../../stitches.config';
 import { NotesPageProps } from '@/core/types/types';
+import Date from './Date';
 
 export const AllNotes = ({ allPosts }: NotesPageProps) => {
   return (
@@ -10,7 +11,7 @@ export const AllNotes = ({ allPosts }: NotesPageProps) => {
           <Link href={`/${post.slug}`} passHref>
             <NoteContainer>
               <PostTitle>{post.title}</PostTitle>
-              <PostDate>{post.date ? new Date(post.date).toLocaleDateString() : 'No date'}</PostDate>
+              <PostDate dateString={post.date}></PostDate>
             </NoteContainer>
             <PostSubtitle>{post.description}</PostSubtitle>
           </Link>
@@ -53,6 +54,7 @@ const PostTitle = styled('h2', {
 
 const PostSubtitle = styled('h4', {
   fontSize: '15px',
+  fontWeight: 'lighter',
   margin: '0',
   color: '$secondary',
   maxWidth: '100%',
@@ -67,9 +69,6 @@ const PostSubtitle = styled('h4', {
   '-webkit-line-clamp': 2,
 });
 
-const PostDate = styled('time', {
-  fontSize: '16px',
-  color: '$secondary',
-});
+const PostDate = styled(Date, { fontSize: '16px', fontWeight: 'bold', color: '$secondary' });
 
 export default AllNotes;
