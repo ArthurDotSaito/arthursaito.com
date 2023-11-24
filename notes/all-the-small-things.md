@@ -1,8 +1,8 @@
 ---
-title: 'All the small things'
-description: 'No.It's not Blink-182. Here we are in the end of 2023. Have you done your year-end retrospective?'
-slug: '2023-small-things'
-date: '2022-11-22'
+title: All the small things
+description: "No.It's not Blink-182. Here we are in the end of 2023. Have you done your year-end retrospective?"
+slug: 2023-small-things
+date: "2023-11-22"
 ---
 
 We've reached that time of the year when I start to think, "Wow, the year is ending," and many people begin to plan their objectives and achievements for the next year. Although I'm uncertain about what I want to do in the upcoming year, it might be insightful to list some events or experiences that occurred this year, which have brought me to my current position. One of the many reasons that drove me to build this website is to 'put things on paper (or on a screen, in this case)', primarily because it helps me to sort out my thoughts.
@@ -21,3 +21,7 @@ I don't have precise statistics, as I'm not one to meticulously track every habi
 This year was a game changer in my career. I made the decisive move to step away from industrial engineering, driven by a multitude of reasons. Notably, my increasing immersion in software engineering played a crucial role. Throughout my professional journey, shifting across different fields has become a second nature to me. However, after years of such diversity in my work, I've felt a growing urge to devote more time to my personal projects and life, all of which are intricately linked to the computer science field. There was a moment when my life seemed merely an extension of my work, and so I decided to change the things a little bit and “integrate” my work into my life as one of its many aspects.
 
 <img alt="my-life-and-work-sphere" src="../public/static/notes-images/life-work-spheres.png" class="note-image-full">
+
+That all said, I leave my position as a R&D Researcher on the industry and move to a Software Architect role in my current job. I still learning great deals about the architecture itself, articularly because it has been quite some time since I last worked with a complex system of numerous microservices. I'm not yet well familiarized with the recent changes of the .NET 6 & 7 (the main stack used here), so I'm still taking my time to learn more about.
+
+Another positive aspect with my decision is that I'll have more time to focus on my master's. I had been postponing some subjects and consequently my thesis, simply because I had absolutely no time to dedicate to it. I expect to return to the 'normal pace' on the next year, when the winter session classes start.
