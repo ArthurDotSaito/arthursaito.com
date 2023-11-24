@@ -26,7 +26,7 @@ export async function getStaticPaths() {
 export async function getStaticProps({ params }: StaticPropsParams) {
   try {
     const notes = fetchNotesBySlug(params.slug, ["date", "content", "title", "image", "description", "slug"]);
-    console.log("Fetched content for:", params.slug);
+
     const content = await mdToHtml(notes.content || "");
 
     console.log("Props being returned for:", params.slug, notes);
