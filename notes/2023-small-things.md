@@ -13,14 +13,24 @@ I don't have precise statistics, as I'm not one to meticulously track every habi
 
 - Books: I've read 13 books this year, many of which are technical, like 'Refactoring' by Martin Fowler.
 - Travels: I've traveled to three different countries this year: Equador, the USA, and Argentina. I visited 27 new cities, with the trip to Gramado being a highlight.
-- Sports or Gym: I always enjoy being active. I'm quite proud of my 177 check-ins at Gympass just this year and the time spent playing basketball games.
+- Sports or Gym: I always enjoy being active. I'm quite proud of my 152 check-ins at Gympass just this year and the time spent playing basketball games.
 - Podcasts: I spent 7,233 minutes, or approximately 120 hours and 33 minutes, listening to podcasts. I mostly listen to them while working, driving, or even at the gym. Highlights include Hipsters.tech, Lex Friedman Podcast, Nerdcast, Naruhodo, and Science Vs.
 
 I'm also trying to switch my main code editor. I'm currently using the editors from JetBrains (IntelliJ, Rider, Pycharm and GoLand) and VS Code, but I've decided to finally config for my neovim properly and I started to code some Javascript lines from there. I feel my productivity going down, since I'm still adapting to the Neovim shortcuts, even though I've configured them myself. For this reason, I'm primarily using Neovim for personal projects at the moment, but plan to give more code time with nvim.
 
 <img alt="my-nvim" src="/static/notes-images/my-nvim-image.png" class="note-image-full">
+*This is my neovim layout. As you can see, I filled it with plugins.
 
-Also, talking about personal projects
+My current nvim configuration and plugins can be checked here: [My Nvim Configuration](https://github.com/ArthurDotSaito/vim-config)
+
+Additionally, speaking of personal projects, I am nearing the completion of my 'own computer project.' The core concept is derived from the book 'The Elements of Computer Systems' by Noam Nisan and Shimon Schocken (you can find the book here; I purchased my physical copy from Amazon: The Elements of Computer Systems). This project involves building and designing a computer from the most fundamental logical gates (Nand, Or, Xor, etc.), including the CPU, RAM, memory, and machine language, all the way to developing basic software based on this language. I still have to generate the VM code in order to start to build a high-level language, but most of the machine language is done by this time.
+
+<img alt="computer-system-diagram" src="/static/notes-images/computer-system-diagram.jpg" class="note-image-full">
+*This is the general idea of the project.
+
+However, between trips, tours, changes in perspectives and career, the biggest highlight of this year was an extra cat for the collection. In this year's beginnings, Lady Paprika arrived at home, bringing me some happy moments and even more broken cables - totally Worth it, I must say.
+
+Oh yeah, and i decided to write my own webpage.
 
 ## Career
 
