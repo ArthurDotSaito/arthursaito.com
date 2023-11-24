@@ -15,6 +15,4 @@ Just my own website, where I exercise the power of creation. I'm not a big fan o
 
 ## License
 
-Mozilla Public License
-
-Check the License file for more detail
+Mozilla Public License - © Arthur Saito
