@@ -1,12 +1,12 @@
-import { NotesStaticProps, StaticPropsParams } from '@/core/types/types';
-import { fetchAllNotes, fetchNotesBySlug, mdToHtml } from '@/lib/notes';
-import { ArticleJsonLd } from 'next-seo';
-import Head from 'next/head';
-import NotFound from './404';
-import NoteLayout from '@/layout/NoteLayout';
+import { NotesStaticProps, StaticPropsParams } from "@/core/types/types";
+import { fetchAllNotes, fetchNotesBySlug, mdToHtml } from "@/lib/notes";
+import { ArticleJsonLd } from "next-seo";
+import Head from "next/head";
+import NotFound from "./404";
+import NoteLayout from "@/layout/NoteLayout";
 
 export async function getStaticPaths() {
-  const notes = await fetchAllNotes(['slug']);
+  const notes = await fetchAllNotes(["slug"]);
 
   const paths = notes.map((n) => {
     return {
@@ -16,13 +16,13 @@ export async function getStaticPaths() {
     };
   });
 
-  return { paths, fallback: 'blocking' };
+  return { paths, fallback: "blocking" };
 }
 
 export async function getStaticProps({ params }: StaticPropsParams) {
   try {
-    const notes = fetchNotesBySlug(params.slug, ['date', 'content', 'title', 'image', 'description', 'slug']);
-    const content = await mdToHtml(notes.content || '');
+    const notes = fetchNotesBySlug(params.slug, ["date", "content", "title", "image", "description", "slug"]);
+    const content = await mdToHtml(notes.content || "");
 
     return {
       props: {
@@ -32,7 +32,7 @@ export async function getStaticProps({ params }: StaticPropsParams) {
       revalidate: 60,
     };
   } catch (error) {
-    return { props: { errorCode: 404, errorMessage: 'Page not found' } };
+    return { props: { errorCode: 404, errorMessage: "Page not found" } };
   }
 }
 
