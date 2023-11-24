@@ -21,9 +21,11 @@ export async function getStaticPaths() {
 
 export async function getStaticProps({ params }: StaticPropsParams) {
   try {
+    console.log("porra");
     const notes = fetchNotesBySlug(params.slug, ["date", "content", "title", "image", "description", "slug"]);
     const content = await mdToHtml(notes.content || "");
-
+    console.log(notes);
+    console.log(content);
     return {
       props: {
         ...notes,
@@ -32,6 +34,7 @@ export async function getStaticProps({ params }: StaticPropsParams) {
       revalidate: 60,
     };
   } catch (error) {
+    console.log(error);
     return { props: { errorCode: 404, errorMessage: "Page not found" } };
   }
 }
@@ -40,6 +43,7 @@ const Note = (props: NotesStaticProps) => {
   if (!props.title || !props.description || !props.slug || !props.date || !props.content) {
     return <NotFound />;
   }
+  console.log(props);
 
   const title = `${props.title} - Arthur S.`;
   const description = `${props.description}`;

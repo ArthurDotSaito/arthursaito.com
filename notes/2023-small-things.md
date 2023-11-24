@@ -18,15 +18,15 @@ I don't have precise statistics, as I'm not one to meticulously track every habi
 
 I'm also trying to switch my main code editor. I'm currently using the editors from JetBrains (IntelliJ, Rider, Pycharm and GoLand) and VS Code, but I've decided to finally config for my neovim properly and I started to code some Javascript lines from there. I feel my productivity going down, since I'm still adapting to the Neovim shortcuts, even though I've configured them myself. For this reason, I'm primarily using Neovim for personal projects at the moment, but plan to give more code time with nvim.
 
-<img alt="my-nvim" src="../public/static/notes-images/my-nvim-image.png" class="note-image-full">
+<img alt="my-nvim" src="/static/notes-images/my-nvim-image.png" class="note-image-full">
 
-Also, this is the year I started this webpage.
+Also, talking about personal projects
 
 ## Career
 
 This year was a game changer in my career. I made the decisive move to step away from industrial engineering, driven by a multitude of reasons. Notably, my increasing immersion in software engineering played a crucial role. Throughout my professional journey, shifting across different fields has become a second nature to me. However, after years of such diversity in my work, I've felt a growing urge to devote more time to my personal projects and life, all of which are intricately linked to the computer science field. There was a moment when my life seemed merely an extension of my work, and so I decided to change the things a little bit and “integrate” my work into my life as one of its many aspects.
 
-<img alt="my-life-and-work-sphere" src="../public/static/notes-images/life-work-spheres.png" class="note-image-full">
+<img alt="my-life-and-work-sphere" src="/static/notes-images/life-work-spheres.png" class="note-image-full">
 
 That all said, I leave my position as a R&D Researcher on the industry and move to a Software Architect role in my current job. I still learning great deals about the architecture itself, particularly because it has been quite some time since I last worked with a complex system of numerous microservices. I'm not yet well familiarized with the recent changes of the .NET 6 & 7 (the main stack used here), so I'm still taking my time to learn more about.
 
