@@ -7,6 +7,10 @@ import NoteLayout from "@/layout/NoteLayout";
 
 export async function getStaticPaths() {
   const notes = await fetchAllNotes(["slug"]);
+  console.log(
+    "Generating paths for:",
+    notes.map((note) => note.slug),
+  );
 
   const paths = notes.map((n) => {
     return {
@@ -22,14 +26,16 @@ export async function getStaticPaths() {
 export async function getStaticProps({ params }: StaticPropsParams) {
   try {
     const notes = fetchNotesBySlug(params.slug, ["date", "content", "title", "image", "description", "slug"]);
+    console.log("Fetched content for:", params.slug);
     const content = await mdToHtml(notes.content || "");
+
+    console.log("Props being returned for:", params.slug, notes);
 
     return {
       props: {
         ...notes,
         content,
       },
-      revalidate: 60,
     };
   } catch (error) {
     console.log(error);

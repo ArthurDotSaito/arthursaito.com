@@ -1,5 +1,4 @@
 import { BaseWrapper } from "@/components/BaseWrapper";
-import { NotesStaticProps } from "@/core/types/types";
 import { globalCss, styled } from "@stitches/react";
 import NavBar from "@/components/NavBar";
 import { PageContainer, PageStandardContent } from "@/components/PageContainer";
