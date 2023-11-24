@@ -16,6 +16,10 @@ I don't have precise statistics, as I'm not one to meticulously track every habi
 - Sports or Gym: I always enjoy being active. I'm quite proud of my 177 check-ins at Gympass just this year and the time spent playing basketball games.
 - Podcasts: I spent 7,233 minutes, or approximately 120 hours and 33 minutes, listening to podcasts. I mostly listen to them while working, driving, or even at the gym. Highlights include Hipsters.tech, Lex Friedman Podcast, Nerdcast, Naruhodo, and Science Vs.
 
+I'm also trying to switch my main code editor. I'm currently using the editors from JetBrains (IntelliJ, Rider, Pycharm and GoLand) and VS Code, but I've decided to finally config for my neovim properly and I started to code some Javascript lines from there. I feel my productivity going down, since I'm still adapting to the Neovim shortcuts, even though I've configured them myself. For this reason, I'm primarily using Neovim for personal projects at the moment, but plan to give more code time with nvim.
+
+<img alt="my-nvim" src="../public/static/notes-images/my-nvim-image.png" class="note-image-full">
+
 Also, this is the year I started this webpage.
 
 ## Career
@@ -24,6 +28,6 @@ This year was a game changer in my career. I made the decisive move to step away
 
 <img alt="my-life-and-work-sphere" src="../public/static/notes-images/life-work-spheres.png" class="note-image-full">
 
-That all said, I leave my position as a R&D Researcher on the industry and move to a Software Architect role in my current job. I still learning great deals about the architecture itself, articularly because it has been quite some time since I last worked with a complex system of numerous microservices. I'm not yet well familiarized with the recent changes of the .NET 6 & 7 (the main stack used here), so I'm still taking my time to learn more about.
+That all said, I leave my position as a R&D Researcher on the industry and move to a Software Architect role in my current job. I still learning great deals about the architecture itself, particularly because it has been quite some time since I last worked with a complex system of numerous microservices. I'm not yet well familiarized with the recent changes of the .NET 6 & 7 (the main stack used here), so I'm still taking my time to learn more about.
 
 Another positive aspect with my decision is that I'll have more time to focus on my master's. I had been postponing some subjects and consequently my thesis, simply because I had absolutely no time to dedicate to it. I expect to return to the 'normal pace' on the next year, when the winter session classes start.
