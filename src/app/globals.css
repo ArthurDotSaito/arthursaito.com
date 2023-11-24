@@ -75,12 +75,6 @@ ol {
   padding-left: 2em;
 }
 
-.note-image-full {
-  margin: 20px 0 0 0;
-  width: 70vh;
-  max-width: initial;
-}
-
 @media (prefers-color-scheme: dark) {
   html {
     color-scheme: dark;
