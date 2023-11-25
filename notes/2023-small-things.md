@@ -41,3 +41,7 @@ This year was a game changer in my career. I made the decisive move to step away
 That all said, I leave my position as a R&D Researcher on the industry and move to a Software Architect role in my current job. I still learning great deals about the architecture itself, particularly because it has been quite some time since I last worked with a complex system of numerous microservices. I'm not yet well familiarized with the recent changes of the .NET 6 & 7 (the main stack used here), so I'm still taking my time to learn more about.
 
 Another positive aspect with my decision is that I'll have more time to focus on my master's. I had been postponing some subjects and consequently my thesis, simply because I had absolutely no time to dedicate to it. I expect to return to the 'normal pace' on the next year, when the winter session classes start.
+
+## What's next
+
+As this year comes to a close, I find myself reflecting on the small yet significant moments that have shaped my 2023 journey. Whether it’s the joy brought by Lady Paprika, the challenges in my career shift, or the pursuit of any personal project, each experience has contributed to who I am today. Looking ahead, while specific goals for the next year remain undefined, I'm excited about the possibilities that lie ahead in both my personal and professional life. Embracing the unknown with a focus on the small aspects of life, I step into the future with more curiosity.
